@@ -11,6 +11,7 @@
   <title>Feria | Tecnología e Innovación</title>
   <link rel="stylesheet" href="css/theme.min.css">
   <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <style>
     /* inter-300 - latin */
@@ -88,7 +89,7 @@
         </li>
 
       </ul>
-      <a href="#" aria-label="asistencia" class="btn btn-outline-light">
+      <a href="https://docs.google.com/forms/d/1agCfqNNo2GCvv0IL7zO6vFa11K0_xzx4c_2FfkUaERQ/edit" target="_blank" aria-label="asistencia" class="btn btn-outline-light">
         <small>Asistencia</small>
       </a>
     </div>
@@ -106,21 +107,63 @@
           <div class="col-12 col-xl-8">
             <p class="lead text-secondary">¡Descubre la innovación!</p>
           </div>
-          <div class="col-12 col-xl-8">
+          <div class="col-12 col-xl-12">
             <p class="lead text-secondary">En el corazón de todo, el Programa SENNOVA del Centro de Gestión y Desarrollo
               Sostenible Surcolombiano, a través de sus estrategias de Semilleros de investigación y Tecnoparque Nodo
               Pitalito, impulsa el progreso tecnológico de la región. Únete a nosotros en este emocionante viaje hacia
               el mañana.</p>
           </div>
           <div class="col-12 text-center ">
-            <a href="#" class="btn btn-xl btn-light">Agenda
-
-              </svg>
-            </a>
+            <a href="#" class="btn btn-xl btn-light" id="openModalBtn">Agenda</a>
           </div>
         </div>
       </div>
     </div>
+
+
+    <!-- Modal -->
+    <div id="agendaModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Agenda</h2>
+        <table>
+          <tr>
+            <th>Hora</th>
+            <th>Actividad</th>
+          </tr>
+          <tr>
+            <td>8:30 am</td>
+            <td>Apertura evento</td>
+          </tr>
+          <tr>
+            <td>8:40 am</td>
+            <td>Introducción por parte de SENNOVA</td>
+          </tr>
+          <tr>
+            <td>9:00 am</td>
+            <td>Primera rotación a estaciones</td>
+          </tr>
+          <tr class="text-success">
+            <td >9:40 am</td>
+            <td >Descanso (30 minutos)</td>
+          </tr>
+          <tr>
+            <td>10:10 am</td>
+            <td>Inicio de la segunda rotación a estaciones</td>
+          </tr>
+          <tr>
+            <td>10:50 am</td>
+            <td>Inicio de la tercera rotación a estaciones</td>
+          </tr>
+          <tr>
+            <td>11:40 am</td>
+            <td>Inscripción de aprendices a la plataforma Tecnoparque</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
 
     <div class="w-100 position-relative bg-black text-white bg-cover d-flex align-items-center">
       <div class="container-fluid px-vw-5">
@@ -141,16 +184,19 @@
         </div>
       </div>
     </div>
+
     <div class="bg-dark">
       <div class="container px-vw-5 py-vh-5">
         <div class="row d-flex align-items-center">
-          <div class="col-12 col-lg-7 text-lg-end " data-aos="fade-right">
+          <div class="col-12 col-lg-6 text-lg-end " data-aos="fade-right">
             <img class="mt-5 img-fluid" src="img/mapa.png" alt="" width="600">
           </div>
-          <div class="col-12 col-lg-5" data-aos="fade-left">
-            <h3 class="pt-5">Mapa Tecnoparque</h3>
-            <p class="text-secondary">Centro de innovación y desarrollo tecnológico ubicado en la ciudad de Pitalito, en
-              el departamento de Huila, Colombia. Este nodo forma parte de la red de Tecnoparques del Servicio Nacional
+          <div class="col-12 col-lg-6" data-aos="fade-left">
+            <h3 class="pt-5">Tecnoparque Nodo Pitalito</h3>
+            <p class="text-secondary">
+              Centro de Gestión y Desarrollo Sostenible Surcolombiano, Tecnoparque Nodo
+              Pitalito. Ubicado en el departamento de Huila, Colombia. Este nodo forma parte de la red de Tecnoparques
+              del Servicio Nacional
               de Aprendizaje (SENA) de Colombia.
             </p>
           </div>
@@ -180,7 +226,7 @@
 
             <div class="card bg-transparent" data-aos="zoom-in-up">
               <div class="bg-dark shadow rounded-5 p-0">
-                <img src="img/estacionB.png" width="582" height="442" alt="abstract image"
+                <img src="img/4.JPG" width="582" height="442" alt="abstract image"
                   class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
                 <div class="p-5">
                   <h2 class="fw-lighter">Estación B</h2>
@@ -201,7 +247,7 @@
             </div>
             <div class="card bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
               <div class="bg-dark shadow rounded-5 p-0">
-                <img src="img/estacionC.png" width="582" height="390" alt="abstract image"
+                <img src="img/1.JPG" width="582" height="390" alt="abstract image"
                   class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
                 <div class="p-5">
                   <h2 class="fw-lighter">Estacion C</h2>
@@ -248,7 +294,7 @@
             <img src="img/webp/logo_sennova.png" width="220" height="40" alt="sennova" loading="lazy">
             <img src="img/webp/tecnoparque.png" alt="logo" width="220" height="60"
               class="d-inline-block align-text-top">
-            <img src="img/logo feria@2x.png" alt="logo" width="80" height="60">
+            <img src="img/logo feria_2@2x.png" alt="logo" width="80" height="60">
           </a>
 
         </div>
@@ -261,13 +307,9 @@
 
 
 
-
-
-
-
-
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/aos.js"></script>
+
   <script>
     AOS.init({
       duration: 800, // values from 0 to 3000, with step 50ms
@@ -289,6 +331,34 @@
 
       console.log(scrollpos)
     })
+  </script>
+
+  <script>
+    // Obtener el modal
+    var modal = document.getElementById("agendaModal");
+
+    // Obtener el botón que abre el modal
+    var btn = document.getElementById("openModalBtn");
+
+    // Obtener el elemento <span> que cierra el modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Cuando el usuario hace clic en el botón, abre el modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // Cuando el usuario hace clic en <span> (x), cierra el modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // Cuando el usuario hace clic fuera del modal, lo cierra
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
   </script>
 
 </body>

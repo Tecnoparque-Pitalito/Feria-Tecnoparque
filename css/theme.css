@@ -4261,7 +4261,7 @@ textarea.form-control-lg {
   padding: var(--bs-toast-padding-x);
   word-wrap: break-word; }
 
-.modal {
+/* .modal {
   --bs-modal-zindex: 1055;
   --bs-modal-width: 500px;
   --bs-modal-padding: 1rem;
@@ -4292,7 +4292,7 @@ textarea.form-control-lg {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  outline: 0; }
+  outline: 0; } */
 
 .modal-dialog {
   position: relative;
