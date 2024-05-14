@@ -1660,3 +1660,10 @@ body[data-aos-duration="3000"] [data-aos] {
 .number-contact{
    color: rgb(118, 211, 42);
 }
+
+@media only screen and (max-width: 1024px) {
+   /* Estilos específicos para pantallas de escritorio */
+   #imgMargin {
+     margin-left: -10px !important;
+   }
+ }
