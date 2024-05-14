@@ -1,52 +1,98 @@
-/* Estilos del Modal */
-.modal {
-    display: none;
-    /* Oculto por defecto */
+/*Efecto*/
+.modalmask {
     position: fixed;
-    /* Fijo en la pantalla */
-    z-index: 1069;
-    /* Sobre otros elementos */
-    left: 0;
+    font-family: Arial, sans-serif;
     top: 0;
-    width: 100%;
-    /* Ancho completo */
-    height: 100%;
-    /* Alto completo */
-    overflow: auto;
-    /* Habilitar scroll si es necesario */
-    background-color: #202020;
-    /* Color de fondo */
-    background-color: #202020;
-    /* Fondo con opacidad */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #20202059;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+
 
 }
 
-.modal-content {
-    background-color: #202020;
-    margin: 15% auto;
-    /* 15% desde la parte superior y centrado */
+.modalmask:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*Formato de la ventana*/
+.modalbox {
+    background-color: #fefefe;
     padding: 20px;
-    border: 1px solid #888;
+    /* border: 1px solid #888; */
     width: 80%;
-    /* Ancho */
-    max-width: 600px;
-    /* Ancho máximo */
+    max-width: 700px;
     border-radius: 10px;
-    text-align: center;
+
+    /* width: 600px; */
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    background: #202020;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+
 }
 
+/*Movimientos*/
+.movedown {
+    margin: 0 auto;
+}
+
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5, -5);
+    transform: scale(-5, -5);
+}
+
+.resize {
+    margin: 10% auto;
+    width: 0;
+    height: 0;
+
+}
+
+.modalmask:target .movedown {
+    margin: 10% auto;
+}
+
+.modalmask:target .rotate {
+    transform: rotate(360deg) scale(1, 1);
+    -webkit-transform: rotate(360deg) scale(1, 1);
+}
+
+.modalmask:target .resize {
+    width: 400px;
+    height: 200px;
+}
+
+/*Boton de cerrar*/
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    margin: 10px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
     font-weight: bold;
+    border-radius: 3px;
+
 }
 
-.close:hover,
-.close:focus {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
+.close:hover {
+    background: #fa5d58;
+    color: #222;
 }
 
 /* Estilos de la tabla */
@@ -54,7 +100,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-
 }
 
 th,
@@ -65,10 +110,11 @@ td {
 }
 
 th {
-    background-color: #202020;
+    background-color: #000000;
     text-align: center;
 }
 
 tr.text-success {
-    color: #50f376;
+    background-color: #28a745;
+    color: white;
 }
