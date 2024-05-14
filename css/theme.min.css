@@ -1656,3 +1656,7 @@ body[data-aos-duration="3000"] [data-aos] {
       transform: translate3d(100px, 0, 0) scale(.6)
    }
 }
+
+.number-contact{
+   color: rgb(118, 211, 42);
+}
