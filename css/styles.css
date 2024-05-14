@@ -110,11 +110,10 @@ td {
 }
 
 th {
-    background-color: #000000;
+    background-color: #181818;
     text-align: center;
 }
 
 tr.text-success {
-    background-color: #28a745;
-    color: white;
+    color: #45ce65;
 }
