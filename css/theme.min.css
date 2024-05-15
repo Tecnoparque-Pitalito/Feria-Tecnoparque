@@ -1666,4 +1666,8 @@ body[data-aos-duration="3000"] [data-aos] {
    #imgMargin {
      margin-left: -10px !important;
    }
+
+   #header-imgs{
+      display: none !important;
+   }
  }
